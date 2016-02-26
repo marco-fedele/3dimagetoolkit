@@ -1,0 +1,114 @@
+################################################################################
+# ------------------------------------------------------------------------------
+#    Manual parameter setting for splitbregman algorithm
+#-------------------------------------------------------------------------------
+################################################################################
+
+[splitbregman]
+	 
+#### SECTION TO SET INITIAL VARIABLES OF THE ALGORITHM
+	[./init]
+	
+	# SET						DEFAULT		DEFAULT		ALLOWED
+	# VARIABLE					CONSTRUCTOR	GETPOT		NUMBERS
+	#							VALUE		VALUE
+
+	# general #
+	verbosity = 1				# 0			-1, safe	>= 0, int
+	maxiter = 10				# 1000		-1, safe	>= 1, int	
+	showfrequency = 1			# 0			-1, safe	>= 0, int
+	dumpfrequency = 0			# 0			-1, safe	>= 0, int
+	outputname = result_			
+								# "result_" "", safe	every string
+	
+	# rsfe parameters #
+	sigma = 3.5					# 3			-1, safe	> 0, real
+	lamda = 1.e-2				# 1.e-3		-1, safe	> 0, real
+	lamda1 = 1.e-5				# 1.e-5		-1, safe	> 0, real
+	lamda2 = 1.e-5				# 1.1e-5	-1, safe	> 0, real
+	beta = 100					# 100		-1, safe	>= 0, real
+	dt = 1.e-0						# 1			-1, safe	> 0, real	
+	ls_steps = 5				# 5			-1, safe	>0, int
+	epsilon = 1.e-3				# 0.1		-1, safe	> 0, real
+	a0 = 0						# 0			2.1e-6		all real numbers 
+	b0 = 1						# 1000		-2.1e-6		all real numbers
+	
+	# connected component #
+	auto_extract_conn_comp = 0	# 0=false	-1, safe	0=false, 1=true
+	cc_init_pixel_x = 60		# -1		-1, safe	>= 0, real
+	cc_init_pixel_y = 28		# -1		-1, safe	>= 0, real
+	cc_init_pixel_z = 21		# -1		-1, safe	>= 0, real
+	cc_binary_output = 1
+	cc_init_variables = 1
+	auto_extract_conn_comp_freq = 1	
+								# 0			-1, safe	>= 0, int	
+	
+	# expert #
+	bc = 2						# 2=DIR		-1, safe	1=NEU, 2=DIR
+	ls_tol = 0					# 0=NOT_SET	-1, safe	>= 0, real
+	edge_detector = 1			# 1=GRAD	-1, safe	1=GRAD, 2=GRAD_THRESHOLD, 3=LBP
+	edge_detector_sigma = 0		# 0			-1, safe	> 0, real
+	gaussian_pixel_approach = 0	# 0=false	-1, safe	0=false, 1=true	
+	tol = 1.e-5					# 1.e-5		-1, safe	>= 0, real
+	#nu = 1 	 				# 1			-1, safe	>= 0, real
+	#alpha =	0.5				# (b0-a0)/2	1.e-9		all real numbers
+	
+	
+	[../]
+
+
+
+#### ON-THE-GO
+#### section to update variables every time there is a show during execution
+	[./onthego] 
+
+	# only onthego #
+#	save_current = 1	
+#	end_now = 1			
+	
+	
+	# general #			
+#	verbosity = 1	
+#	maxiter = 100				
+#	showfrequency = 10			
+#	dumpfrequency = 10			
+#	outputname = crop_			
+	
+	
+	# rsfe parameters #			
+#	sigma = 3.5
+#	lamda = 1.e-1			
+#	lamda1 = 1.e-5			
+#	lamda2 = 1.1e-5		
+#	nu = 1			
+#	beta = 1.e2					
+#	dt = 1
+#	ls_steps = 5						
+#	epsilon = 1.e-3	
+#	a0 = 0								
+#	b0 = 1					
+
+	
+	# connected component #
+#	auto_extract_conn_comp = 0	
+#	cc_init_pixel_x = 75		
+#	cc_init_pixel_y = 108			
+#	cc_init_pixel_z = 55		
+#	auto_extract_conn_comp_freq = 5		
+	
+			
+	# expert			
+#	bc = 1
+#	ls_tol = 0.01	
+#	edge_detector_sigma = 0		
+#	gaussian_pixel_approach = 0			
+#	tol = 1.e-5			
+#	alpha =	0.5				
+	
+
+	[../]
+
+
+
+[../]
+

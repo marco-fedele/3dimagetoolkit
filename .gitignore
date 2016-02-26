@@ -1,0 +1,9 @@
+*~
+\#*#
+bin
+CMakeFiles
+doc
+CMakeCache.txt
+cmake_install.cmake
+doxy_warning.txt
+Makefile
