@@ -2,7 +2,7 @@
 =========================================================================================
 3D Image Toolkit
 
-Copyright 2013: 
+Copyright 2013:
 Marco Fedele, Luca Barbarotta, Francesco Cremonesi, Elena Faggiano.
 All rights reserved.
 Read details of the license in the file license.txt provided with the library.
@@ -11,7 +11,7 @@ Read details of the license in the file license.txt provided with the library.
 
 /*!
  \file names.hxx
- 
+
  \brief file with some include and typedef used by the whole library
  */
 
@@ -42,7 +42,7 @@ typedef unsigned int uint;
  \author  Luca Barbarotta, luca.barbarotta@gmail.com
  \author  Francesco Cremonesi, francesco.cremonesi0@gmail.com
  \author  Elena Faggiano, elena.faggiano@gmail.com
- 
+
  \copyright Copyright 2013 Marco Fedele, Luca Barbarotta, Francesco Cremonesi, Elena Faggiano. All rights reserved. Read details of the license in the file license.txt provided with the library.
 
  <B>Download Link</B>: under construction!

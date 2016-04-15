@@ -33,7 +33,6 @@ All these libraries must be installed before starting the installation.
 
 Some notes:
 
-- the library is tested with VTK 5.10
 - the library needs the fftw version working with openmp (if you compile it, use the option --enable-shared)
 - GetPot can be download from the website and copied in your path, e.g. `/usr/include/`
 - in debian based Linux distribution all the necessary packages (except GetPot) should be available with apt-get

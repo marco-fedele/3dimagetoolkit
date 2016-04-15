@@ -2,7 +2,7 @@
 =========================================================================================
 3D Image Toolkit
 
-Copyright 2013: 
+Copyright 2013:
 Marco Fedele, Luca Barbarotta, Francesco Cremonesi, Elena Faggiano.
 All rights reserved.
 Read details of the license in the file license.txt provided with the library.
@@ -33,9 +33,9 @@ typedef float MY_REAL;
 
 
 
-int main (int argc, char ** argv)
+int main (int argc, char** argv)
 {
-	// write here your code exploiting the library
+    // write here your code exploiting the library
 
-	return 0;
+    return 0;
 }
