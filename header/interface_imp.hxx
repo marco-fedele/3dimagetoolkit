@@ -106,7 +106,12 @@ void im3d::interface<S>::convertfromimage3d (image3d<S> const & myim)
 							   static_cast<double>(myim.gethy()),
 							   static_cast<double>(myim.gethz()) );
 	this->imageptr->SetExtent(0,myim.getdimx()-1,0,myim.getdimy()-1,0,myim.getdimz()-1);
-	
+#if VTK_MAJOR_VERSION <= 5
+	this->imageptr->SetNumberOfScalarComponents(1);
+	this->imageptr->SetScalarTypeToDouble();
+#else
+	this->imageptr->AllocateScalars(VTK_DOUBLE,1);
+#endif
 	for(uint i = 0; i < myim.getdimx(); ++i)
 		for(uint j = 0; j < myim.getdimy(); ++j)
 			for(uint k = 0; k < myim.getdimz(); ++k)
