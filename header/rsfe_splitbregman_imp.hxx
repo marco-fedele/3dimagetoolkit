@@ -548,9 +548,6 @@ void segm::rsfe_splitbregman<T>::set_param_from_getpot (std::string const & sect
 	std::string comment_end   = "\n";
 	std::string input_file  = this->getpotfile;
 	
-	if ( input_file.compare( input_file.size()-4, 4, ".pot") != 0)
-		input_file += ".pot";
-	
 	GetPot ifile(input_file.c_str(), comment_start.c_str(), comment_end.c_str());
 	
 	double ttemp;
