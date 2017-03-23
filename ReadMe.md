@@ -18,7 +18,7 @@ This library is released with the BSD license, see file [license.md](./license.m
 - **Luca Barbarotta**: [luca.barbarotta@gmail.com](mailto:luca.barbarotta@gmail.com)
 - **Francesco Cremonesi**: [francesco.cremonesi0@gmail.com](mailto:francesco.cremonesi0@gmail.com)
 
-Authors acknowledge [Prof. L. Formaggia](https://mox.polimi.it/people-detail/?id=142) and [Prof. S. Perotto](https://mox.polimi.it/people-detail/?id=142) for supervising the implementation of the segmentation algorithm.
+Authors acknowledge [Prof. L. Formaggia](https://mox.polimi.it/people-detail/?id=142) and [Prof. S. Perotto](https://mox.polimi.it/people-detail/?id=117) for supervising the implementation of the segmentation algorithm.
 
 ![Alt text](./images/logo.jpg)
 
