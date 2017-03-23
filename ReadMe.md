@@ -1,7 +1,7 @@
 # 3DImageToolkit: a framework for Medical Image Segmentation and Filtering
 A C++ library to perform basic image filtering and a semi-automatic segmentation through the Connected Component Localization of the Region-Scalable Fitting Energy.
 
-The theory behind this segmentation method can be found in details in the following [publication](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7306035&tag=1):
+The theory behind this segmentation method can be found in details in the following [publication](https://doi.org/10.1109/ISPA.2015.7306035):
 
 - Fedele, M., Faggiano, E., Barbarotta, L., Cremonesi, F., Formaggia, L., & Perotto, S. (2015, September). Semi-automatic three-dimensional vessel segmentation using a connected component localization of the Region-Scalable Fitting Energy. In *Image and Signal Processing and Analysis (ISPA), 2015 9th International Symposium on (pp. 72-77). IEEE.*
 
@@ -10,14 +10,15 @@ If you use this work, please don't forget to cite this paper.
 ## License
 Copyright © 2013-2016 Luca Barbarotta, Francesco Cremonesi, Elena Faggiano, Marco Fedele. All Rights Reserved.
 
-This library is released with the BSD license.
-See file license.txt for all the details.
+This library is released with the BSD license, see file [license.md](./license.md) for all the details.
 
-## Contacts
+## Authors and Contacts
 - **Marco Fedele**: [fedele.marco@gmail.com](mailto:fedele.marco@gmail.com)
 - **Elena Faggiano**: [elena.faggiano@gmail.com](mailto:elena.faggiano@gmail.com)
 - **Luca Barbarotta**: [luca.barbarotta@gmail.com](mailto:luca.barbarotta@gmail.com)
 - **Francesco Cremonesi**: [francesco.cremonesi0@gmail.com](mailto:francesco.cremonesi0@gmail.com)
+
+Authors acknowledge [Prof. L. Formaggia](https://mox.polimi.it/people-detail/?id=142) and [Prof. S. Perotto](https://mox.polimi.it/people-detail/?id=142) for supervising the implementation of the segmentation algorithm.
 
 ![Alt text](./images/logo.jpg)
 
